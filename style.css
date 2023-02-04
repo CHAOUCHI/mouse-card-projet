@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    background: linear-gradient(#0497ff,#04fff2,#04ff5c,#71ff04,#eaff04,#ffab04,#ff6404, #ec0808);
+    animation: movecolor 5s infinite linear ;
+    animation-direction: alternate;
+    background-size: 100% 300%;
+    
+
+}
+
+
+div{
+    height:400px;
+    width:400px;
+    --var-angle : 0deg;
+    --var-x : 0;
+    --var-y : 0;
+    box-shadow: black 0 0 10px;
+    transform: rotate3d(var(--var-x), var(--var-y), 0, var(--var-angle));
+}
+  
+@keyframes movecolor {
+    0%{background-position : 0% 0%;}
+    100%{background-position : 0% 100%;}
+
+}
