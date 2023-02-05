@@ -2,7 +2,7 @@ const html = document.documentElement;
 const div = document.querySelector("div");
 const div_width = div.offsetWidth;
 /** Angle max que va accomplir ma div lors de la rotation*/
-let angleDestination = 45;
+let angleDestination = 5;
 
 /**
  * Lorsque la souris bouge
