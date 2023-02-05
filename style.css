@@ -1,3 +1,13 @@
+/**
+Mise en forme avec un display flex 
+et un gradient qui s'anime pour faire beau seulement ^^'.
+*/
+html{
+    --var-angle : 0deg;
+    --var-x : 0;
+    --var-y : 0;
+}
+
 body{
     margin: 0;
     box-sizing: border-box;
@@ -9,19 +19,18 @@ body{
     animation: movecolor 5s infinite linear ;
     animation-direction: alternate;
     background-size: 100% 300%;
-    
-
 }
 
 
-div{
+.mouse-card{
     height:400px;
     width:400px;
-    --var-angle : 0deg;
-    --var-x : 0;
-    --var-y : 0;
     box-shadow: black 0 0 10px;
     transform: rotate3d(var(--var-x), var(--var-y), 0, var(--var-angle));
+}
+.mouse-card__img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
   
 @keyframes movecolor {
